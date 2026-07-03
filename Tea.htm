@@ -1,13 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
-    <link rel="stylesheet" href="TeaFont.css">
-    
-</head>
-<body>
-    
-</body>
+    <!-- Font CDN -->
+    <link rel="stylesheet" href="TeaFont.css" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fontawosame CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="manrope">
+    <!-- Banner Section -->
+    <section>
+      <div
+        class="header-banner flex flex-col p-2 md:flex-row justify-between items-center  max-w-[1250px] mx-auto gap-3"
+      >
+        <div class="left-div">
+          <h1 class="text-6xl md:text-[80px] font-bold manrope">
+            It's good<br />tea time at The<br />Tea House
+          </h1>
+          <p class="text-[18px] font-medium manrope">
+            Tea and Botanical Solutions Supplier Give Optimum<br />
+            Satisfaction To Your Taste Buds.
+          </p>
+          <button
+            class="bg-red-500 rounded-md w-[200px] h-[80px] text-[20px] font-bold manrope text-white mt-4 bg-gradient-to-r from-[#FF8938] to-[#FF0000]"
+          >
+            Explore More
+            <span><i class="fa-solid fa-arrow-down rotate-220"></i></span>
+          </button>
+        </div>
+        <div class="right-div relative">
+          <img
+            class="relative top-[100px]"
+            src="/images/banner.png"
+            alt="Banner Image"
+          />
+          <div
+            class="flex items-center w-[255px] h-[100px] rounded-lg shadow-md absolute left-[100px] bg-white"
+          >
+            <span class="text-3xl font-bold">
+              <i class="fa-regular fa-star"></i>
+            </span>
+            <div class="ml-4">
+              <p class="text-4xl font-bold">5.00</p>
+              <p>Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product section  -->
+    <section class="max-w-[1250px] mx-auto mt-[130px]">
+      <h1 class="text-4xl text-center manrope font-bold m-4">
+        Our Featured Products
+      </h1>
+      <p class="text-center my-4 manrope">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable.
+      </p>
+      <div
+        class="fetured_parent grid sm: grid-cols-1 gap-0 md:grid-cols-4 md:gap-6 min-h-[350px]"
+      >
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[#F4F4F4] rounded-md">
+          <img class="mx-auto py-3" src="/images/tea-1.png" alt="Tea-1" />
+          <h4 class="text-center font-bold text-3xl mt-4 manrope">Milk Tea</h4>
+          <p class="text-center manrope text-xl m-2">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[#F4F4F4] rounded-md">
+          <img class="mx-auto py-3" src="/images/tea-2.png" alt="Tea-2" />
+          <h4 class="text-center font-bold text-3xl mt-4 manrope">Black Tea</h4>
+          <p class="text-center manrope text-xl m-2">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[#F4F4F4] rounded-md">
+          <img class="mx-auto py-3" src="/images/tea-3.png" alt="Tea-1" />
+          <h4 class="text-center font-bold text-3xl mt-4 manrope">Lemon Tea</h4>
+          <p class="text-center manrope text-xl m-2">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[#F4F4F4] rounded-md">
+          <img class="mx-auto py-3" src="/images/tea-4.png" alt="Tea-1" />
+          <h4 class="text-center font-bold text-3xl mt-4 manrope">Green Tea</h4>
+          <p class="text-center manrope text-xl m-2">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Great Tea Section  -->
+<!-- 
+    <section class="max-w-[1250px] mx-auto mt-[100px] gap-6 flex flex-col overflow-hidden md:flex-row">
+      <div
+        class="left-great-tea  md:w-1/2 grid grid-cols-2 grid-rows-3 gap-4"
+      >
+        <div
+          class="h-full rounded-lg bg-gradient-to-r from-red-500/10 to-orange-400/10"
+        ></div>
+
+        <div
+          class="row-span-2 rounded-lg bg-[#E6A6231A] flex items-center justify-center"
+        >
+          <img src="/images/fresh-1.png" alt="" />
+        </div>
+
+        <div
+          class="row-span-2 rounded-lg bg-[#5776391A] flex items-center justify-center"
+        >
+          <img src="/images/fresh-2.png" alt="" />
+        </div>
+
+        <div
+          class="h-full rounded-lg bg-gradient-to-r from-gray-200 to-white"
+        ></div>
+      </div>
+      <div class="right-great-tea md:w-1/2">
+        <h1 class="text-[45px] font-bold mt-[60px]">
+          Great Tea, Freshly<br />
+          Presented
+        </h1>
+        <p class="text-[16px] my-[20px]">
+          The meaning of gong cha is chanese is to provide the best tea to
+          emperor from all possessions . It represents the highest quality and
+          self expectation. Establishing in 2006, Gong cha had been deeply
+          appreciated by its custoers because of good words of mouth and unique
+          customized service orginated from Taiwan.
+        </p>
+        <h3 class="text-xl font-bold">Unique Taste</h3>
+        <p class="text-[16px] my-[18px]">
+          A Unique and different style from other teapots gives a luxurious and
+          minimalist impression
+        </p>
+        <h3 class="text-xl font-bold">Premium Quality</h3>
+        <p class="text-[16px] mt-[16px]">
+          Premium Quality that makes tea more elegant and more durable when you
+          use it.
+        </p>
+      </div>
+    </section> -->
+
+    <!-- Great Tea Section -->
+<section class="max-w-[1250px] mx-auto mt-24 px-4 flex flex-col md:flex-row gap-8">
+
+  <!-- Left Grid -->
+  <div class="w-full md:w-1/2 grid grid-cols-2 grid-rows-3 gap-4 h-[520px]">
+
+    <div class="rounded-lg bg-gradient-to-r from-red-500/10 to-orange-400/10"></div>
+
+    <div class="row-span-2 rounded-lg bg-[#E6A6231A] flex items-center justify-center p-6">
+      <img
+        class="max-w-full max-h-full object-contain"
+        src="/images/fresh-1.png"
+        alt="Fresh Tea 1"
+      />
+    </div>
+
+    <div class="row-span-2 rounded-lg bg-[#5776391A] flex items-center justify-center p-6">
+      <img
+        class="max-w-full max-h-full object-contain"
+        src="/images/fresh-2.png"
+        alt="Fresh Tea 2"
+      />
+    </div>
+
+    <div class="rounded-lg bg-gradient-to-r from-gray-200 to-white"></div>
+
+  </div>
+
+  <!-- Right Content -->
+  <div class="w-full md:w-1/2 flex flex-col justify-center">
+
+    <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+      Great Tea, Freshly <br />
+      Presented
+    </h2>
+
+    <p class="mt-6 text-gray-600 leading-7">
+      The meaning of gong cha is Chinese is to provide the best tea to emperor
+      from all possessions. It represents the highest quality and
+      self-expectation. Establishing in 2006, Gong Cha had been deeply
+      appreciated by its customers because of good word of mouth and unique
+      customized service originated from Taiwan.
+    </p>
+
+    <h3 class="mt-8 text-xl font-bold">
+      Unique Taste
+    </h3>
+
+    <p class="mt-3 text-gray-600 leading-7">
+      A unique and different style from other teapots gives a luxurious and
+      minimalist impression.
+    </p>
+
+    <h3 class="mt-6 text-xl font-bold">
+      Premium Quality
+    </h3>
+
+    <p class="mt-3 text-gray-600 leading-7">
+      Premium quality that makes tea more elegant and more durable when you use
+      it.
+    </p>
+
+  </div>
+
+</section>
+  </body>
 </html>
